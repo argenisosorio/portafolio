@@ -1,8 +1,9 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
-  background: #FAFAFA;
+  /*background: #FAFAFA;*/
   /*color: #FFFFFF;*/
+  background-image: linear-gradient(#FAFAFA, #4682B4);
 }
 .theme-dropdown .dropdown-menu {
   position: static;
