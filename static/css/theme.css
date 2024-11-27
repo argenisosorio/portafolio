@@ -1,7 +1,7 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
-  background-image: linear-gradient(135deg, #6b1267, #0072ff, #7f00ff, #e100ff);
+  background-image: linear-gradient(135deg, #6b1267, #004aa5, #7f00ff, #e100ff);
 }
 
 #particles-js {
@@ -1374,4 +1374,19 @@ p {
 
 .text-light {
   color: #FFFFFF !important;
+}
+
+.btn-success {
+  background-color: #6f4a72;
+  border: ridge 1px gray;
+}
+
+.btn-success:hover {
+  background-color: #FAFAFA;
+  border: ridge 1px #564757;
+  color: #671469;
+}
+
+hr {
+  border: 0.1rem solid gray;
 }
