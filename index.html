@@ -18,9 +18,13 @@
     <script>window.jQuery || document.write('<script src="static/js/jquery-1.12.4.min.js"><\/script>')</script>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
     <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="static/js/particles.min.js"></script>
   </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<!-- Contenedor de partículas de fondo -->
+<div id="particles-js"></div>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="z-index: 1;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -46,7 +50,7 @@
     </div>
   </div>
 </nav>
-<div class="container theme-showcase" role="main">
+<div class="container theme-showcase" role="main" style="z-index: 1;">
   <div class="row">
     <div class="col-sm-4">
       <div class="text-center mb-4">
@@ -616,5 +620,77 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-body img').attr("alt", recipient)
   modal.find('.url').text(url).attr('href', url);
 })
+</script>
+
+<script>
+  // Inicializar particles.js en el contenedor específico
+  particlesJS('particles-js', {
+  "particles": {
+      "number": {
+      "value": 50,
+      "density": {
+          "enable": true,
+          "value_area": 800
+      }
+      },
+      "color": {
+      "value": "#C0C0C0"
+      },
+      "shape": {
+      "type": "circle",
+      "stroke": {
+          "width": 0,
+          "color": "#000000"
+      }
+      },
+      "opacity": {
+      "value": 0.1,
+      "random": false
+      },
+      "size": {
+      "value": 3,
+      "random": true
+      },
+      "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#C0C0C0",
+      "opacity": 0.4,
+      "width": 1
+      },
+      "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false
+      }
+  },
+  "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+      "onhover": {
+          "enable": true,
+          "mode": "repulse"
+      },
+      "onclick": {
+          "enable": true,
+          "mode": "push"
+      }
+      },
+      "modes": {
+      "repulse": {
+          "distance": 100,
+          "duration": 0.4
+      },
+      "push": {
+          "particles_nb": 4
+      }
+      }
+  },
+  "retina_detect": true
+  });
 </script>
 </html>
