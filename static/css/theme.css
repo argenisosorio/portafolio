@@ -1,17 +1,8 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
-  background-image: linear-gradient(135deg, #6b1267, #004aa5, #7f00ff, #e100ff);
-}
-
-#particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none; /* Para que no interfiera con clics o interacciones */
+  /*background-image: linear-gradient(135deg, #6b1267, #004aa5, #7f00ff, #e100ff);*/
+  background-color: #000000;
 }
 
 .theme-dropdown .dropdown-menu {
@@ -1389,4 +1380,10 @@ p {
 
 hr {
   border: 0.1rem solid gray;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
